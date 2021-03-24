@@ -1,15 +1,32 @@
 import React from "react";
 import "./Home.css";
+import CardProducts from '../Card/Card';
+import item1 from "../../assets/images/products/item1.jpg"
+
 
 
 export default function Home() {
-  return (
-    <div className="Home">
-      <div className="lander">
-        <h1>Minion Shop</h1>
-        <p className="text-muted">Reserve o seu aqui!</p>
-        
-      </div>
+
+
+
+  const card={
+    "id": 1,
+    "title": "Funko",
+    "price": 50,
+    "image": item1,
+    "orderButtom": "creatOrder",
+    "description": "Funko colecionável"
+  };
+
+  return(
+    <div className="Home"
+         style={{
+           maxWidth: 500,
+           margin: '50px auto',
+         }} 
+    >
+      <CardProducts card = {card}/>
+
     </div>
-  );
+  )
 }

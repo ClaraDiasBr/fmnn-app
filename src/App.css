@@ -1,2 +1,15 @@
 .App {
 }
+.Navbar-Logo{
+    max-width: 75px;
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    
+}
+.bg-light {
+    background-color: #e6f759!important;
+}
+.text-muted {
+    color: #1173ca!important;
+}
