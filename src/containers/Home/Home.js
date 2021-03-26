@@ -1,22 +1,16 @@
 import React from "react";
 import "./Home.css";
 import CardProducts from '../Card/Card';
-import item1 from "../../assets/images/products/item1.jpg"
+//import item1 from "../../assets/images/products/item1.jpg"
 
 
+//<CardProducts card = {card}/>
 
 export default function Home() {
 
 
 
-  const card={
-    "id": 1,
-    "title": "Funko",
-    "price": 50,
-    "image": item1,
-    "orderButtom": "creatOrder",
-    "description": "Funko colecionável"
-  };
+  
 
   return(
     <div className="Home"
@@ -25,7 +19,8 @@ export default function Home() {
            margin: '50px auto',
          }} 
     >
-      <CardProducts card = {card}/>
+      <CardProducts
+      />
 
     </div>
   )

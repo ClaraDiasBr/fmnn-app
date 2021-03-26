@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import Login from "./containers/Login/Login";
-import Cart from "./containers/Cart/Cart";
 import NotFound from "./containers/NotFound/NotFound";
 import Signup from "./containers/Signup/Signup";
 
@@ -11,9 +10,6 @@ export default function Routes() {
     <Switch>
       <Route exact path="/">
         <Home />
-      </Route>
-      <Route exact path="/cart">
-        <Cart />
       </Route>
       <Route exact path="/login">
         <Login />
